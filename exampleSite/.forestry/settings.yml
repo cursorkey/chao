@@ -4,6 +4,11 @@ auto_deploy: false
 admin_path: ''
 webhook_url: 
 sections:
+- type: directory
+  path: ''
+  label: SW Testing
+  create: all
+  match: "**/*"
 - type: heading
   label: Blog Post
 - type: directory
@@ -68,8 +73,6 @@ sections:
   match: "**/*"
   templates:
   - notice
-- type: heading
-  label: Teacher
 - type: directory
   path: exampleSite/content/english/teacher
   label: Teacher (en)
